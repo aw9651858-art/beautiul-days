@@ -1,0 +1,598 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background-image: url("خلفيه.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+/* طبقة خفيفة فوق الخلفية */
+
+body::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.15);
+
+    z-index: 0;
+}
+
+/* نخلي صندوق الـ Login فوق الخلفية */
+
+.login-box {
+    position: relative;
+    z-index: 1;
+}
+
+/* الكارت */
+
+.login-box {
+    width: 320px;
+    min-height: 550px;
+
+    padding: 25px 25px 22px;
+
+    background: linear-gradient(
+        180deg,
+        #c2185b,
+        #e91e63
+    );
+
+    border-radius: 45px;
+
+    box-shadow:
+        10px 15px 25px rgba(0, 0, 0, 0.25);
+
+    text-align: center;
+}
+
+
+/* صورة اللوجن */
+
+.login-image {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    background: white;
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.login-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+
+/* العنوان */
+
+.login-box h1 {
+    margin: 0 0 22px;
+
+    color: white;
+
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+}
+
+
+/* الخانات */
+
+.login-box input {
+    width: 100%;
+
+    height: 45px;
+
+    margin-bottom: 15px;
+
+    padding: 0 15px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 25px;
+
+    background: #f8f8f8;
+
+    color: #555;
+
+    font-size: 15px;
+
+    box-shadow:
+        6px 8px 0 rgba(120, 120, 120, 0.25);
+}
+
+.login-box input::placeholder {
+    color: #777;
+}
+
+
+/* نسيت كلمة السر */
+
+.forgot {
+    margin: 15px 0 30px;
+
+    color: white;
+
+    font-family: Georgia, serif;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+/* زر Login */
+
+#loginBtn {
+    width: 90%;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #7289e8;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    box-shadow:
+        7px 8px 0 rgba(100, 100, 100, 0.25);
+
+    transition: 0.3s;
+}
+
+#loginBtn:hover {
+    transform: translateY(-3px);
+}
+
+#loginBtn:active {
+    transform: translateY(2px);
+}
+
+
+/* رسالة الخطأ */
+
+#errorMessage {
+    margin-top: 20px;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+/* الموبايل */
+
+@media (max-width: 600px) {
+
+    .login-box {
+        width: 90%;
+        min-height: 580px;
+
+        padding: 40px 25px;
+    }
+
+    .login-box h1 {
+        font-size: 34px;
+    }
+
+    .user-icon {
+        margin-bottom: 60px;
+    }
+
+    .login-box input {
+        height: 60px;
+    }
+
+}
+/* 💗 شاشة الترحيب */
+
+.welcome {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #ffd6e5,
+        #ffeef4,
+        #ffc8dc
+    );
+
+    z-index: 9999;
+
+    overflow: hidden;
+
+    animation: welcomeFade 0.8s ease;
+}
+
+
+/* ❤️ إطار القلب حوالين الكلام */
+
+.welcome::before {
+    content: "♡";
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    width: 430px;
+    height: 360px;
+
+    transform:
+        translate(-50%, -50%)
+        rotate(-3deg);
+
+    border: 5px solid #ff4f91;
+
+    border-radius:
+        50%
+        50%
+        45%
+        45%;
+
+    clip-path: polygon(
+        50% 100%,
+        5% 55%,
+        5% 25%,
+        15% 8%,
+        32% 3%,
+        50% 18%,
+        68% 3%,
+        85% 8%,
+        95% 25%,
+        95% 55%
+    );
+
+    opacity: 0;
+
+    filter:
+        drop-shadow(0 0 7px rgba(255, 79, 145, .5));
+
+    animation: drawHeart 2s ease forwards;
+}
+
+
+/* ✨ لمعة خفيفة حوالين القلب */
+
+.welcome::after {
+    content: "✦  ✧  ✦  ✧  ✦";
+
+    position: absolute;
+
+    top: 20%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #ff4f91;
+
+    font-size: 24px;
+
+    letter-spacing: 18px;
+
+    opacity: 0;
+
+    animation:
+        sparkleShow 1s ease 1.8s forwards,
+        sparkleFloat 3s ease-in-out 2.8s infinite;
+}
+
+
+/* ❤️ العنوان */
+
+.welcome h1 {
+    position: relative;
+
+    z-index: 5;
+
+    margin: 0;
+
+    color: #e91e63;
+
+    font-size: 42px;
+
+    font-weight: bold;
+
+    text-shadow:
+        0 3px 10px rgba(233, 30, 99, .18);
+
+    animation:
+        welcomeTitle 1s ease,
+        cuteBounce 2s ease-in-out 1s infinite;
+}
+
+
+/* 💗 القلب فوق الكلام */
+
+.welcome h1::before {
+    content: "💗";
+
+    display: block;
+
+    font-size: 65px;
+
+    margin-bottom: 5px;
+
+    animation:
+        heartBeat 1.2s ease-in-out infinite;
+}
+
+
+/* 💌 الرسالة */
+
+.welcome p {
+    position: relative;
+
+    z-index: 5;
+
+    margin-top: 15px;
+
+    color: #777;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    text-shadow:
+        0 2px 8px rgba(255, 255, 255, .8);
+
+    animation: welcomeText 1.4s ease;
+}
+
+
+/* ❤️ رسم القلب تدريجيًا */
+
+@keyframes drawHeart {
+
+    0% {
+        opacity: 0;
+
+        transform:
+            translate(-50%, -50%)
+            rotate(-3deg)
+            scale(.65);
+    }
+
+    40% {
+        opacity: .35;
+    }
+
+    70% {
+        opacity: .75;
+    }
+
+    100% {
+        opacity: 1;
+
+        transform:
+            translate(-50%, -50%)
+            rotate(-3deg)
+            scale(1);
+    }
+}
+
+
+/* ✨ ظهور اللمعة */
+
+@keyframes sparkleShow {
+
+    from {
+        opacity: 0;
+        transform:
+            translateX(-50%)
+            scale(.5);
+    }
+
+    to {
+        opacity: .7;
+        transform:
+            translateX(-50%)
+            scale(1);
+    }
+}
+
+
+/* ✨ حركة اللمعة */
+
+@keyframes sparkleFloat {
+
+    0%, 100% {
+        transform:
+            translateX(-50%)
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateX(-50%)
+            translateY(-7px);
+    }
+}
+
+
+/* ظهور الشاشة */
+
+@keyframes welcomeFade {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* ظهور العنوان */
+
+@keyframes welcomeTitle {
+
+    from {
+        opacity: 0;
+        transform:
+            translateY(30px)
+            scale(.8);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+/* حركة بسيطة للعنوان */
+
+@keyframes cuteBounce {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+/* نبض القلب */
+
+@keyframes heartBeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+/* ظهور الرسالة */
+
+@keyframes welcomeText {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* 📱 الموبايل */
+
+@media (max-width: 600px) {
+
+    .welcome::before {
+        width: 310px;
+        height: 290px;
+
+        border-width: 4px;
+    }
+
+    .welcome h1 {
+        font-size: 32px;
+    }
+
+    .welcome h1::before {
+        font-size: 55px;
+    }
+
+    .welcome p {
+        font-size: 17px;
+
+        max-width: 250px;
+    }
+
+    .welcome::after {
+        font-size: 18px;
+        letter-spacing: 10px;
+    }
+}
+/* 📱 تصغير صفحة اللوجن للموبايل */
+
+@media (max-width: 600px) {
+
+    .login-box {
+        width: 80%;
+        max-width: 320px;
+        padding: 18px;
+    }
+
+    .login-image img {
+        width: 100%;
+        max-width: 180px;
+        height: 120px;
+        object-fit: cover;
+    }
+
+    .login-box h1 {
+        font-size: 20px;
+        margin: 12px 0;
+    }
+
+    .login-box input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .login-box button {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    .forgot {
+        font-size: 12px;
+    }
+
+}

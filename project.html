@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>💗 Beautiful Days 💗</title>
+
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+
+    <!-- القلوب -->
+    <div class="hearts"></div>
+
+<!-- مشغل الموسيقى 🎵 -->
+<div class="music-player">
+
+    <div class="music-icon">
+        🎵
+    </div>
+
+    <div class="music-center">
+        <strong>أغنيتنا ❤️</strong>
+        <small>Tamer Hosny</small>
+    </div>
+
+    <button id="musicBtn">▶</button>
+
+    <div class="music-progress">
+        <span id="currentTime">00:00</span>
+
+        <input type="range" id="progressBar" value="0" min="0" max="100">
+
+        <span id="duration">00:00</span>
+    </div>
+
+</div>
+
+
+
+<!-- 💗 مقدمة الموقع --><section class="intro-memory"><div class="intro-image">
+    <img src="WhatsApp Image 2026-09-21 at 7.35.47 PM.jpeg" alt="">
+</div>
+
+<div class="intro-text">
+
+    <h2>هنا بدأت أجمل حكاية في حياتي ❤️</h2>
+
+    <p>
+        ومن يوم 24 / 8 / 2023
+        <br>
+        وكل لحظة معاكي بقت ذكرى أحتفظ بيها في قلبي 💗
+    </p>
+
+    <strong>Adham 💗 *****</strong>
+
+</div>
+
+</section>
+
+
+    <!-- الصور -->
+    <section class="memories">
+
+        <h2>أجمل ذكرياتنا 📸</h2>
+
+        <div class="photos">
+
+            <img src="WhatsApp Image 2026-09-05 at 5.33.33 PM.jpeg"
+                alt="ذكرياتنا"
+                onclick="openImage(this)">
+
+            <img src="WhatsApp Image 2026-09-08 at 7.38.15 PM.jpeg"
+                alt="ذكرياتنا"
+                onclick="openImage(this)">
+
+            <img src="WhatsApp Image 2026-09-08 at 7.38.16 PM (1).jpeg"
+                alt="ذكرياتنا"
+                onclick="openImage(this)">
+
+        </div>
+
+    </section>
+
+
+    <!-- تكبير الصورة -->
+    <div id="imageBox" class="image-box" onclick="closeImage()">
+
+        <img id="bigImage" src="" alt="صورة كبيرة">
+
+    </div>
+
+    <!-- 💕 ألبوم ذكرياتنا الجديد --><section class="new-album"><h2>ذكرياتنا الجديدة 💕📸</h2>
+
+<p>كل صورة بتحكي حكاية من حكاياتنا ❤️</p>
+
+<div class="album-track">
+
+    <div class="album-card">
+        <img src="WhatsApp Image 2026-09-21 at 7.44.53 PM.jpeg" alt="">
+    </div>
+
+    <div class="album-card">
+        <img src="WhatsApp Image 2026-09-21 at 7.44.53 PM (1).jpeg" alt="">
+    </div>
+
+    <div class="album-card">
+        <img src="WhatsApp Image 2026-09-21 at 7.44.54 PM (1).jpeg" alt="">
+    </div>
+
+    <div class="album-card">
+        <img src="WhatsApp Image 2026-09-21 at 7.44.53 PM (2).jpeg" alt="">
+    </div>
+
+</div>
+
+</section>
+
+
+    <!-- التاريخ -->
+    <section class="date-section">
+
+        <h2>من يوم ما بدأت حكايتي مع القمر❤️</h2>
+
+        <p>24 / 08 / 2023</p>
+
+    </section>
+
+
+    <!-- العداد -->
+    <section class="counter-section">
+
+        <h2>عدّى على حكايتنا ❤️</h2>
+
+        <div class="counter">
+
+            <div>
+                <span id="days">0</span>
+                <small>يوم</small>
+            </div>
+
+            <div>
+                <span id="hours">0</span>
+                <small>ساعة</small>
+            </div>
+
+            <div>
+                <span id="minutes">0</span>
+                <small>دقيقة</small>
+            </div>
+
+            <div>
+                <span id="seconds">0</span>
+                <small>ثانية</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- الذكريات -->
+    <section class="memories-details">
+
+        <h2>ذكرياتنا 💕</h2>
+
+        <div class="memory-card">
+
+            <img src="WhatsApp Image 2026-09-05 at 5.33.33 PM.jpeg"
+                alt="أول ذكرى">
+
+            <h3>أول ذكرى ❤️</h3>
+
+            <p>
+                اليوم اللي بدأ فيه كل شيء، ولسه فاكر كل تفاصيله.
+            </p>
+
+        </div>
+
+
+        <div class="memory-card">
+
+            <img src="WhatsApp Image 2026-09-08 at 7.38.15 PM.jpeg"
+                alt="أجمل يوم">
+
+            <h3>أجمل يوم 💕</h3>
+
+            <p>
+                يوم جميل من الأيام اللي مستحيل أنساها.
+            </p>
+
+        </div>
+
+
+        <div class="memory-card">
+
+            <img src="WhatsApp Image 2026-09-08 at 7.38.16 PM (1).jpeg"
+                alt="لحظة مميزة">
+
+            <h3>لحظة مميزة 💗</h3>
+
+            <p>
+                ذكرى صغيرة، لكنها غالية على قلبي.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- رسالة الحب -->
+    <section class="love-message">
+
+        <h2>رسالة ليكي ❤️</h2>
+
+        <p>
+            مهما عدّى وقت، هتفضلي دايمًا أجمل جزء في حكايتي.
+            <br>
+            وكل يوم معاكي بيخليني أحبك أكتر ❤️
+        </p>
+
+    </section>
+
+
+    <!-- النهاية -->
+    <section class="final-message">
+
+        <h2>ولسه الحكاية مكملة... ❤️</h2>
+
+        <p>
+            مهما عدّى وقت، هتفضل ذكرياتنا من أجمل الحاجات اللي حصلتلي.
+            <br>
+            ولسه قدامنا ذكريات كتير نعيشها سوا ❤️
+        </p>
+
+    </section>
+
+<!-- 🔐 الرسالة السرية الجديدة -->
+<section class="secret-section">
+
+    <div class="secret-card">
+
+        <div class="secret-lock" id="secretLock">
+            🔐
+        </div>
+
+        <h2>في حاجة مستخبية ليكي... 💗</h2>
+
+        <p class="secret-hint">
+            حاجة صغيرة محدش يقدر يشوفها غيرك ❤️
+        </p>
+
+        <button id="secretBtn">
+            ✨ افتحي المفاجأة ✨
+        </button>
+
+        <div id="secretMessage" class="secret-message" hidden>
+
+            <div class="secret-sparkle">
+                ✨
+            </div>
+
+            <p>
+                يمكن الكلام ده بسيط...
+                بس هو طالع من قلبي ليكي ❤️
+                <br><br>
+
+                من يوم ما دخلتي حياتي،
+                وأنا بقيت أشوف تفاصيل صغيرة
+                كان زماني بعدي عليها من غير ما أخد بالي.
+                <br><br>
+
+                ضحكتك، كلامك، وجودك جنبي...
+                كل حاجة فيكي بقت ذكرى جميلة
+                نفسي أفضل عايشها معاكي.
+                <br><br>
+
+                <strong>
+                    وفي الآخر...
+                    لو اتخيرت ألف مرة،
+                    هختارك إنتِ كل مرة ❤️
+                </strong>
+            </p>
+
+            <div class="secret-hearts">
+                💗 ❤️ 💗
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ليه بحبك ❤️ -->
+<section class="why-love">
+
+    <h2>ليه بحبك؟ ❤️</h2>
+
+    <div class="reasons">
+
+        <div class="reason">
+            <span>❤️</span>
+            <h3>علشان قلبك</h3>
+            <p>قلبك جميل ودايمًا بيخليني أحس إني محظوظ بوجودك.</p>
+        </div>
+
+        <div class="reason">
+            <span>🥰</span>
+            <h3>علشان ضحكتك</h3>
+            <p>ضحكتك لوحدها كفاية تغيّر يومي كله.</p>
+        </div>
+
+        <div class="reason">
+            <span>🌎</span>
+            <h3>علشان وجودك</h3>
+            <p>وجودك في حياتي من أجمل الحاجات اللي حصلتلي.</p>
+        </div>
+
+        <div class="reason">
+            <span>💗</span>
+            <h3>علشان كل حاجة فيكي</h3>
+            <p>بحبك زي ما إنتي، بكل تفاصيلك الصغيرة والكبيرة.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- رسالة من المستقبل 💌 -->
+<section class="future-message">
+    <div class="future-card">
+
+        <div class="future-icon">💌</div>
+
+        <h2>رسالة من المستقبل</h2>
+
+        <p class="future-date">اقري ي روحي</p>
+
+        <button id="futureBtn">افتحي رسالتك 💗</button>
+
+        <div id="futureText" class="future-text"></div>
+
+    </div>
+</section>
+
+<!-- 🎁 صندوق الهدية -->
+<section class="gift-section">
+
+    <h2>عندي ليكي مفاجأة 🎁❤️</h2>
+
+    <p>اضغطي على الهدية واكتشفي اللي جواها ✨</p>
+
+    <div class="gift-wrapper" id="giftBox">
+
+        <!-- 🎁 الهدية -->
+        <div class="gift">
+
+            <div class="gift-lid">
+                <div class="ribbon"></div>
+            </div>
+
+            <div class="gift-box">
+                <div class="ribbon vertical"></div>
+                <div class="ribbon horizontal"></div>
+            </div>
+
+        </div>
+
+        <!-- 📸 الصورة -->
+        <div class="gift-photo">
+
+            <img
+                id="giftImage"
+                src="WhatsApp Image 2026-09-05 at 5.33.33 PM.jpeg"
+                alt="">
+
+        </div>
+
+        <div class="image-popup" id="imagePopup">
+    <img id="popupImage" src="" alt="">
+</div>
+
+    </div>
+
+    <!-- 🎁 زر فتح الهدية -->
+    <button id="openGiftBtn">
+        🎁 افتحي الهدية ❤️
+    </button>
+
+
+   <div class="gift-message" id="giftMessage">
+
+    <h3>مفاجأة ليكي 💗</h3>
+
+    <p>
+        أجمل هدية في حياتي هي وجودك معايا ❤️✨
+    </p>
+
+    <strong class="love-word">
+        بحبك ❤️
+    </strong>
+
+</div>
+
+</section>
+
+
+<!-- 🎵 صوت الهدية -->
+<script>
+
+const giftBox = document.getElementById("giftBox");
+const openGiftBtn = document.getElementById("openGiftBtn");
+const giftMessage = document.getElementById("giftMessage");
+const giftImage = document.getElementById("giftImage");
+
+
+/* 📸 الصور العشوائية */
+
+const giftImages = [
+
+"WhatsApp Image 2026-09-05 at 5.33.33 PM.jpeg",
+"WhatsApp Image 2026-09-08 at 7.38.15 PM.jpeg",
+"WhatsApp Image 2026-09-08 at 7.38.16 PM (1).jpeg",
+"WhatsApp Image 2026-09-13 at 5.50.41 PM.jpeg"
+
+];
+
+
+/* 🎵 صوت فتح الهدية */
+
+function playGiftSound() {
+
+    const AudioContext =
+        window.AudioContext ||
+        window.webkitAudioContext;
+
+    if (!AudioContext) return;
+
+    const audioCtx = new AudioContext();
+
+    const notes = [
+        { frequency: 523.25, delay: 0 },
+        { frequency: 659.25, delay: 0.12 },
+        { frequency: 783.99, delay: 0.24 }
+    ];
+
+    notes.forEach(note => {
+
+        const oscillator =
+            audioCtx.createOscillator();
+
+        const gain =
+            audioCtx.createGain();
+
+        oscillator.type = "sine";
+
+        oscillator.frequency.value =
+            note.frequency;
+
+        oscillator.connect(gain);
+
+        gain.connect(audioCtx.destination);
+
+        const startTime =
+            audioCtx.currentTime +
+            note.delay;
+
+        gain.gain.setValueAtTime(
+            0,
+            startTime
+        );
+
+        gain.gain.linearRampToValueAtTime(
+            0.18,
+            startTime + 0.03
+        );
+
+        gain.gain.exponentialRampToValueAtTime(
+            0.001,
+            startTime + 0.7
+        );
+
+        oscillator.start(startTime);
+
+        oscillator.stop(
+            startTime + 0.7
+        );
+
+    });
+
+}
+
+
+/* 🎁 فتح الهدية */
+
+if (
+    giftBox &&
+    openGiftBtn &&
+    giftMessage &&
+    giftImage
+) {
+
+    openGiftBtn.addEventListener(
+        "click",
+        function () {
+
+            /* 🎲 اختيار صورة عشوائية */
+
+            const randomIndex =
+                Math.floor(
+                    Math.random() *
+                    giftImages.length
+                );
+
+            giftImage.src =
+                giftImages[randomIndex];
+
+
+            /* 🎵 تشغيل الصوت */
+
+            playGiftSound();
+
+
+            /* 🎁 فتح الهدية */
+
+            giftBox.classList.add("open");
+
+
+            /* 💗 إظهار الكارت الأصلي */
+
+            giftMessage.classList.add("show");
+
+
+            /* 🔄 تغيير الزر */
+
+            openGiftBtn.textContent =
+                "🎁 مفاجأة تانية ❤️";
+
+        }
+    );
+
+}
+/* 📸 تكبير صورة الهدية */
+
+const imagePopup = document.getElementById("imagePopup");
+const popupImage = document.getElementById("popupImage");
+
+if (giftImage && imagePopup && popupImage) {
+
+    giftImage.addEventListener("click", function () {
+
+        popupImage.src = giftImage.src;
+
+        imagePopup.classList.add("show");
+
+    });
+
+    imagePopup.addEventListener("click", function () {
+
+        imagePopup.classList.remove("show");
+
+    });
+
+}
+
+</script>
+
+
+<script>
+const albumTrack = document.querySelector(".album-track");
+const albumCards = document.querySelectorAll(".album-card");
+
+function updateAlbum() {
+
+    const trackCenter =
+        albumTrack.scrollLeft +
+        albumTrack.clientWidth / 2;
+
+    albumCards.forEach(card => {
+
+        const cardCenter =
+            card.offsetLeft +
+            card.offsetWidth / 2;
+
+        const distance =
+            Math.abs(trackCenter - cardCenter);
+
+        if (distance < card.offsetWidth / 2) {
+
+            card.classList.add("active");
+
+        } else {
+
+            card.classList.remove("active");
+
+        }
+
+    });
+}
+
+if (albumTrack) {
+
+    albumTrack.addEventListener(
+        "scroll",
+        updateAlbum
+    );
+
+    window.addEventListener(
+        "resize",
+        updateAlbum
+    );
+
+    updateAlbum();
+}
+</script>
+
+
+<script>
+const futureBtn = document.getElementById("futureBtn");
+const futureText = document.getElementById("futureText");
+
+const futureMessage = `حبيبتي ❤️
+
+روح قلبي❤️
+
+لو إنتي بتقري الرسالة دي دلوقتي، فمعنى كده إن سنين عدّت من أول يوم بدأت فيه حكايتنا...
+
+سنين فيها أيام حلوة، وأيام صعبة، وضحك، وزعل، وعتاب، واشتياق، ولحظات يمكن وقتها مكناش عارفين إنها هتبقى بعد كده من أجمل ذكريات عمرنا. ❤️
+
+فاكرة يوم 24/8/2023؟
+اليوم اللي بدأت فيه الحكاية...
+
+يمكن وقتها مكناش نعرف إحنا رايحين لفين، ولا كنا نعرف إن الشخص اللي قدامنا هيبقى بالشكل ده مهم في حياتنا.
+
+بس أنا دلوقتي، بعد كل السنين دي، أقدر أقولك إن من أجمل الحاجات اللي حصلتلي إني عرفتك. 💗
+
+عدّت أيام كتير، وكبرنا، واتغيرت حاجات كتير حوالينا...
+
+لكن نفسي تكون في حاجة واحدة بس مفضلتش تتغير:
+
+إنك لما تفتكري اسمي... تبتسمي. ❤️
+
+نفسي تفضلي فاكرة كل مرة ضحكنا فيها من غير سبب، وكل مرة اتخانقنا ورجعنا نتكلم، وكل مرة كنتي محتاجة حد يسمعك وكنت نفسي أكون أنا الشخص ده.
+
+فاكرة كل التفاصيل الصغيرة اللي يمكن وقتها كانت عادية؟
+
+الكلام اللي كنا بنقوله لبعض، والهزار، والرسائل، واللحظات اللي كنا بنفرح بيها من أبسط حاجة...
+
+الحاجات دي هي اللي فهمتني بعدين إن أجمل الذكريات مش لازم تكون لحظات كبيرة.
+
+أحيانًا أجمل ذكرى بتكون مجرد لحظة صغيرة...
+
+بس مع الشخص الصح. ❤️
+
+ولو في يوم من الأيام الدنيا كانت تعبتنا، أو خلت كل واحد فينا مشغول عن التاني، أو خلتنا ننسى تفاصيل كتير...
+
+عايزك تفتكري إن في وقت من الأوقات كان فيه شخص شايفك أجمل جزء في يومه.
+
+شخص كان بيفرح لمجرد إنك موجودة.
+
+وشخص كان نفسه يشوفك مبسوطة حتى لو هو نفسه مش أحسن حاجة.
+
+أنا مش عارف المستقبل هيكون عامل إزاي...
+
+ومش عارف كام سنة هتعدي بعد اللحظة اللي إنتي بتقري فيها الكلام ده.
+
+بس عارف حاجة واحدة:
+
+إن مهما الزمن أخدنا بعيد، الحكاية اللي بدأت يوم 24/8/2023 هتفضل ليها مكان مختلف جوايا. ❤️
+
+ولو رجع بيا الزمن لأول يوم عرفتك فيه...
+
+مش هغير حاجة.
+
+هختارك تاني.
+
+وهختار كل ضحكة، وكل ذكرى، وكل لحظة حلوة عشناها.
+
+وهختار حتى الأيام الصعبة...
+
+لأنها كانت جزء من الحكاية.
+
+ولو قابلتيني بعد سنين وسألتي:
+
+"لسه فاكر؟"
+
+هقولك:
+
+"فاكر كل حاجة."
+
+فاكر أول الكلام.
+
+فاكر الضحك.
+
+فاكر الخوف.
+
+فاكر الاشتياق.
+
+فاكر كل لحظة خلتني أقول لنفسي إن وجودك في حياتي مش حاجة عادية.
+
+وأهم حاجة...
+
+فاكر إنك كنتي دايمًا "حبيبتي". ❤️
+
+فلو الرسالة دي وصلتلك بعد سنين...
+
+خليكي عارفة إن في شخص كتبها وهو بيتمنى من كل قلبه إنك تكوني لسه بتقريها بنفس الابتسامة اللي كان بيحب يشوفها على وشك.
+
+وإن أجمل حاجة ممكن تحصل في المستقبل...
+
+إننا نبص ورا ونقول:
+
+"إحنا فعلًا عشنا كل ده سوا." ❤️
+
+ومن المستقبل...
+
+أنا لسه بحبك. 💗
+
+ولسه بختارك.
+
+ولسه شايف إن أجمل أيام حياتي...
+
+هي الأيام اللي كنتي فيها جزء منها.
+
+بحبك يا سلومتي. ❤️
+
+من آدهم...
+إلى روح قلبو سلمي...
+في كل وقت، وفي كل مكان، وفي كل نسخة من المستقبل. 💗🌎
+بححححبببككككك😂💗💗`;
+
+futureBtn.addEventListener("click", function () {
+
+    futureBtn.style.display = "none";
+    futureText.innerHTML = "";
+
+    let i = 0;
+
+    function typing() {
+        if (i < futureMessage.length) {
+
+            if (futureMessage[i] === "\n") {
+                futureText.innerHTML += "<br>";
+            } else {
+                futureText.innerHTML += futureMessage[i];
+            }
+
+            i++;
+
+            setTimeout(typing, 35);
+        }
+    }
+
+    typing();
+});
+</script>
+
+
+<!-- ⏳ آلة زمن حبنا -->
+<section class="time-machine">
+
+    <h2>⏳ آلة زمن حبنا ⏳</h2>
+
+    <p class="time-intro">
+        كل سنة عدّت علينا كانت فصل جديد من حكايتنا ❤️
+        اختاري سنة وشوفي ذكرياتنا.
+    </p>
+
+    <div class="time-line">
+
+        <button class="time-year active" onclick="showYear(2023)">
+            2023
+        </button>
+
+        <button class="time-year" onclick="showYear(2024)">
+            2024
+        </button>
+
+        <button class="time-year" onclick="showYear(2025)">
+            2025
+        </button>
+
+        <button class="time-year" onclick="showYear(2026)">
+            2026
+        </button>
+
+    </div>
+
+    <div class="time-memory" id="timeMemory">
+
+        <div class="time-icon">❤️</div>
+
+        <h3 id="timeTitle">
+            2023 — بداية الحكاية
+        </h3>
+
+        <p id="timeText">
+            السنة اللي بدأت فيها أجمل حكاية في حياتي...
+            ومن يومها وكل حاجة بقت أحلى بوجودك ❤️
+        </p>
+
+        <div class="time-photo">
+            <img id="timeImage"
+                 src="WhatsApp Image 2026-09-05 at 5.33.33 PM.jpeg"
+                 alt="ذكرياتنا">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- 💗 اختبار الحب -->
+<section class="love-quiz">
+
+    <div class="quiz-card">
+
+        <div class="quiz-heart">💗</div>
+
+        <h2>قد إيه تعرفي الحب؟</h2>
+
+        <p class="quiz-intro">
+            جاوبي على 5 أسئلة رومانسية وشوفي نتيجتك ❤️
+        </p>
+
+        <div class="quiz-progress">
+            <span id="quizNumber">السؤال 1 من 5</span>
+
+            <div class="quiz-progress-bar">
+                <div id="quizProgress"></div>
+            </div>
+        </div>
+
+        <div id="quizContent">
+
+            <h3 id="quizQuestion">
+                لما يحصل خلاف بين شخصين بيحبوا بعض،
+                إيه أول حاجة المفروض تحصل؟ ❤️
+            </h3>
+
+            <div id="quizAnswers">
+
+                <button class="quiz-answer"
+                    onclick="checkAnswer(0)">
+                    🗣️ إنهم يتكلموا بهدوء ويفهموا سبب المشكلة.
+                </button>
+
+                <button class="quiz-answer"
+                    onclick="checkAnswer(1)">
+                    🧊 إن كل واحد يبعد شوية لحد ما ينسى الموضوع.
+                </button>
+
+                <button class="quiz-answer"
+                    onclick="checkAnswer(2)">
+                    😅 إنهم يتجاهلوا المشكلة عشان متكبرش.
+                </button>
+
+            </div>
+
+            <p id="quizFeedback"></p>
+
+        </div>
+
+        <div id="quizResult" class="quiz-result">
+
+            <div class="result-heart">❤️</div>
+
+            <h3 id="resultTitle"></h3>
+
+            <p id="resultText"></p>
+
+            <button onclick="restartQuiz()" class="restart-quiz">
+                🔄 جربي تاني
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- 🎡 عجلة الحظ الرومانسية -->
+
+<section class="love-wheel-section">
+
+    <div class="love-wheel-card">
+
+        <div class="wheel-title">
+            <span>🎡</span>
+            <h2>عجلة الحظ ❤️</h2>
+            <span>✨</span>
+        </div>
+
+        <p class="wheel-intro">
+            لفي العجلة وشوفي ادهومتك مخبيلك إيه 💗
+        </p>
+
+        <div class="wheel-container">
+
+            <div class="wheel-pointer">
+                ▼
+            </div>
+
+            <canvas id="loveWheel" width="320" height="320"></canvas>
+
+        </div>
+
+        <button id="spinWheelBtn">
+            🎡 لفي العجلة
+        </button>
+
+        <div id="wheelResult" class="wheel-result"></div>
+
+    </div>
+
+</section>
+
+
+<!-- 🌌 سماء حبنا -->
+
+<section class="love-sky">
+
+    <div class="sky-content">
+
+        <div class="sky-title">
+            ✨
+            <h2>سماء حبنا</h2>
+            ✨
+        </div>
+
+        <p class="sky-intro">
+            كل نجمة هنا بتمثل لحظة حلوة عشناها سوا ❤️
+        </p>
+
+        <div class="stars-area">
+
+            <button class="love-star star-1" data-message="ضحكتك من الحاجات اللي مستحيل أنساها ❤️">
+                ⭐
+            </button>
+
+            <button class="love-star star-2" data-message="في لحظات بسيطة، بس بتفضل في القلب للأبد 💗">
+                ⭐
+            </button>
+
+            <button class="love-star star-3" data-message="وجودك في حياتي خلّى أيام كتير تبقى أجمل 🌹">
+                ⭐
+            </button>
+
+            <button class="love-star star-4" data-message="أجمل ذكرياتي هي اللي كان ليكي فيها مكان ❤️">
+                ⭐
+            </button>
+
+            <button class="love-star star-5" data-message="لسه عندنا ذكريات كتير مستنيانا ✨">
+                ⭐
+            </button>
+
+            <button class="love-star star-6" data-message="كل مرة بفتكرنا فيها، ببتسم من غير ما أحس 🥹❤️">
+                ⭐
+            </button>
+
+            <button class="love-star star-7" data-message="لو رجع بيا الزمن، هختار نفس الحكاية تاني 💕">
+                ⭐
+            </button>
+
+            <button class="love-star star-8" data-message="إنتِ واحدة من أجمل الحاجات اللي حصلتلي 💗">
+                ⭐
+            </button>
+
+            <button class="love-star star-9" data-message="الحكاية لسه مستمرة... ولسه الأجمل جاي ❤️">
+                ⭐
+            </button>
+
+        </div>
+
+        <div id="starMessage" class="star-message">
+            اضغطي على أي نجمة ⭐
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- 🌌 النهاية السينمائية --><section class="final-love"><div class="final-stars"></div>
+
+<div class="final-content">
+
+    <div class="final-small">✨ OUR STORY ✨</div>
+
+    <h2>Adham 💗 Salma</h2>
+
+    <div class="final-line"></div>
+
+    <p class="final-title">
+        دي مش نهاية حكايتنا... ❤️
+    </p>
+
+    <p class="final-text">
+        دي كانت مجرد بداية لذكريات لسه هنعيشها سوا،
+        ولسه في أيام كتير جاية،
+        ولسه في ضحكات وصور ولحظات
+        هتفضل تجمعنا.
+    </p>
+
+    <div class="final-date">
+        24 / 08 / 2023 — ∞
+    </div>
+
+    <button id="finalBtn" class="final-btn">
+        💗 اضغطي هنا للنهاية 💗
+    </button>
+
+    <div id="finalMessage" class="final-message">
+
+        <div class="final-heart">❤️</div>
+
+        <h3>
+            بحبك...
+        </h3>
+
+        <p>
+            النهارده، وبكرة،
+            وكل يوم جاي ❤️
+        </p>
+
+        <div class="final-infinity">
+            ∞
+        </div>
+
+        <div class="final-signature">
+            ✨ Beautiful Days ✨
+            <br>
+            <span>Adham 💗 *****</span>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+    <script src="project.js"></script>
+
+</body>
+
+</html>
